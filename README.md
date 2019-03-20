@@ -1,3 +1,7 @@
+# Complete Result
+
+![NewsApp](./images/news.jpg)
+
 # News App
 
 ver.1 - Simple
