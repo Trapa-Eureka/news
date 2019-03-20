@@ -1,5 +1,8 @@
 :root {
     --borderRadius: 13px;
+    --normalPadding: 0 15px;
+    --leftPadding: 20px;
+    --writerBgLeftMargin: 20px;
 }
 
 * {
@@ -89,4 +92,254 @@ body {
 }
 .grid-item .grid-item__subtitle {
     color: rgba(0, 0, 0, 0.6);
+}
+/********************** news01.html  **********************/
+
+body.subPage {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #fafafc;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 0 0 30px 0;
+    margin: 0 !important;
+}
+
+.header01 {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+}
+
+.header01 .header__title {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.header01 .sub__header {
+    margin-top: 20px;
+}
+.sub__header .header__subtitle01 {
+    font-size: 26px;
+    font-weight: 400;
+}
+.sub__header .header__subtitle02 {
+    font-weight: 200;
+    margin-top: 3px;
+    font-size: 16px;
+    color: #95a5a6;
+}
+
+.category {
+    padding: 0 0 0 var(--leftPadding);
+    margin-bottom: 30px;
+}
+.wrapper {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: grid;
+    grid-auto-columns: minmax(145px, 1fr);
+    grid-auto-flow: column;
+    grid-gap: 15px;
+    padding-bottom: 20px;
+}
+.category__item {
+    height: 145px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 8px 11px -8px rgba(0,0,0,0.7);
+}
+
+.category__item:first-child {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url('https://i.pinimg.com/originals/26/1c/0c/261c0c5d2ac892fefe24cd45e6b8f296.jpg');
+}
+.category__item:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url('https://www.designformusic.com/wp-content/uploads/2016/04/album-cover-design-illustration-trailer-music.jpg');
+}
+.category__item:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url('https://daz19uf2q56ul.cloudfront.net/20170504194216/iTunes-Cover-Artwork.jpg');
+}
+.category__item:last-child {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url('https://obs.smehost.net/sonyclassicalcom-delabelsprod/product/cover/leonard_bernstein_ed/leonard_bernstein_ed_cover_750x750_88843013302_en.jpg');
+}
+
+.category__item .item__text {
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 3px;
+    margin-top: 5px;
+    color: #7f8c8d;
+    display: block;
+    position: relative;
+    top: 22px;
+}
+
+.writer {
+    margin-bottom: 20px;
+}
+.writer .writer__title {
+    padding: 0 0 0 var(--leftPadding);
+    font-size: 22px;
+    font-weight: 500;
+}
+.writer .writer__bg {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-left: var(--writerBgLeftMargin);
+    padding: 15px 15px 15px 20px;
+    background-color: #f4f4f4;
+}
+
+.writer .writer__wrapper {
+    overflow: scroll;
+    display: grid;
+    grid-auto-columns: minmax(161px, 1fr);
+    grid-auto-flow: column;
+    grid-gap: 10px;
+}
+.writer__wrapper .writer__author {
+    height: 53px;
+    border-radius: 5px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 55px 1fr;
+    background-color: #fff;
+    box-shadow: 0px 8px 11px -8px rgba(0,0,0,0.08);
+}
+
+.writer__author .profile {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 8px 11px -8px rgba(0,0,0,0.7);
+}
+
+.writer__author:first-child .profile {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url('https://i.pinimg.com/564x/75/65/7e/75657ec511209dce10707d82b2717e67.jpg');
+}
+.writer__author:nth-child(2) .profile {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url('https://i.pinimg.com/564x/37/20/88/372088162bc6ddd4a1bcc49b5d23eed6.jpg');
+}
+.writer__author:nth-child(3) .profile {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url('https://i.pinimg.com/564x/17/67/12/1767122e740b84caf96e074e4be093b5.jpg');
+}
+.writer__author:last-child .profile {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url('https://i.pinimg.com/564x/0d/b1/57/0db157df361099b03a5db4c40c2dec2e.jpg');
+}
+
+.writer__author .info {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1px;
+    padding: 8px 0;
+}
+.info .name {
+    font-size: 15px;
+    font-weight: 400;
+    color: #4c4c4c;
+}
+.info .topic {
+    font-size: 12px;
+    font-weight: 300;
+    color: #878787;
+}
+
+.newInfo {
+    margin-top: 30px;
+}
+.newInfo .newInfo__title {
+    padding: 0 0 0 var(--leftPadding);
+    font-size: 22px;
+    font-weight: 500;
+}
+.newInfo .newInfo__wrapper {
+    _overflow-y: scroll;
+    _overflow-x: hidden;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 7px;
+    height: 410px;
+    padding: 0 15px 15px 20px;
+    margin-top: 12px;
+}
+.newInfo__wrapper .topic {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-gap: 10px;
+    justify-content: space-between;
+}
+.topic .pic {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0px 8px 11px -8px rgba(0,0,0,0.5);
+}
+
+.topic:first-child .pic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url('https://i.pinimg.com/564x/46/80/9f/46809f91e0f150038c4fce9efa94a919.jpg');
+}
+.topic:nth-child(2) .pic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url('https://i.pinimg.com/564x/b8/8d/2b/b88d2befd52fe1388a8eb4e1938962e8.jpg');
+}
+.topic:nth-child(3) .pic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url('https://i.pinimg.com/564x/c5/27/62/c5276232acbdf17009f803e5d08f742d.jpg');
+}
+.topic:last-child .pic {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+                    url('https://i.pinimg.com/564x/65/c6/01/65c6016dd9ea300a8832df63a1b1c4c4.jpg');
+}
+
+.topic .newsHeader {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2px;
+    padding: 14px 0;
+}
+
+.newsHeader .title {
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    display: flex;
+    align-items: flex-start;
+}
+.newsHeader .press {
+    font-size: 13px;
+    color: #878787;
+    font-weight: 400;
+}
+.newsHeader .newsTitle {
+    font-size: 12px;
+    font-weight: 400;
+    color: #b2b2b2;
+    text-align: justify;
+    display: flex;
+    align-items: flex-end;
 }
